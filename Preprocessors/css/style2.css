@@ -1,0 +1,183 @@
+body header .header-wrap .header_heading::after, body main .section_text::after, body main .section_banner div .section_banner_heading::after {
+  content: '';
+  background-color: #ff4d30;
+  display: block;
+  z-index: -1; }
+
+body main .section_banner, body footer .footer-wrap {
+  display: -ms-grid;
+  display: grid;
+  align-items: center;
+  justify-items: center; }
+
+body {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #1c1e2a;
+  margin: 0;
+  padding: 0;
+  font-family: "Fresca", sans-serif; }
+  body header {
+    background-image: url(../img/m-h-night.jpg);
+    background-size: 100%;
+    min-height: 100vh;
+    border-bottom-right-radius: 20rem 10rem;
+    font-family: 'Source Sans Pro', sans-serif; }
+    body header .header-wrap {
+      padding-left: 7%; }
+      body header .header-wrap .landing-logo {
+        width: 10%;
+        font-weight: 700;
+        text-align: center;
+        color: #fff;
+        padding-top: 1%; }
+        body header .header-wrap .landing-logo img {
+          width: 30%; }
+        body header .header-wrap .landing-logo p {
+          font-family: "Fresca", sans-serif;
+          display: inline-block;
+          padding-bottom: 0;
+          font-size: 1.5rem;
+          font-weight: bolder; }
+          body header .header-wrap .landing-logo p span {
+            display: block;
+            font-size: .6rem;
+            font-weight: normal; }
+      body header .header-wrap .header_heading {
+        width: 40%;
+        font-size: 4rem;
+        font-weight: 800;
+        color: #fff; }
+        body header .header-wrap .header_heading::after {
+          height: 3rem;
+          width: 48%;
+          margin: -10% 0 0 0; }
+      body header .header-wrap .header_text {
+        width: 40%;
+        color: #cccccc;
+        line-height: 2rem;
+        padding-bottom: 4rem;
+        font-family: "Fresca", sans-serif; }
+      body header .header-wrap div .header_button {
+        background: #e4ae00;
+        text-align: center;
+        color: #fff;
+        border: none;
+        width: 9rem;
+        height: 3rem;
+        font-weight: 700;
+        -webkit-border-radius: 5%;
+        -moz-border-radius: 5%;
+        -o-border-radius: 5%;
+        -ms-border-radius: 5%;
+        border-radius: 5%; }
+      body header .header-wrap div a.login {
+        color: #fff;
+        padding-left: 9%; }
+  body main {
+    margin: 0 auto;
+    width: 960px; }
+    body main .section_text {
+      text-align: center;
+      font-size: 2rem;
+      font-weight: 700;
+      color: #fff;
+      font-family: 'Source Sans Pro', sans-serif; }
+      body main .section_text::after {
+        height: 1em;
+        width: 115pt;
+        margin: -4% 0 0 50%; }
+    body main .section_card_wrap {
+      width: 95%;
+      margin: 0 auto; }
+      body main .section_card_wrap .section_card {
+        display: -ms-grid;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-auto-rows: minmax(200px, auto);
+        background-color: #383d4f;
+        margin-bottom: 2rem;
+        border-radius: 0.7rem;
+        padding: 1%; }
+        body main .section_card_wrap .section_card .section_card_img {
+          grid-column: span 1;
+          width: 100%;
+          height: 100%;
+          border-radius: 0.5rem; }
+        body main .section_card_wrap .section_card .section_card_right_container {
+          align-self: center;
+          text-align: center;
+          padding-bottom: 2%; }
+          body main .section_card_wrap .section_card .section_card_right_container .section_card_heading {
+            color: #fff;
+            font-weight: bold;
+            font-size: 1.2rem; }
+          body main .section_card_wrap .section_card .section_card_right_container .section_card_text {
+            color: #9ca5b3;
+            text-align: justify;
+            padding: 0 10%;
+            text-align-last: left; }
+          body main .section_card_wrap .section_card .section_card_right_container .section_link {
+            color: #9ca5b3; }
+    body main .section_banner {
+      background: linear-gradient(to right, #dca002, #962c4e);
+      border-radius: 0.7rem;
+      grid-template-columns: 2fr 1fr;
+      position: relative;
+      top: 50px;
+      z-index: 5; }
+      body main .section_banner div .section_banner_heading {
+        font-weight: bolder;
+        font-size: 1.8rem;
+        margin-bottom: 2%;
+        color: #fff;
+        font-family: 'Source Sans Pro', sans-serif; }
+        body main .section_banner div .section_banner_heading::after {
+          height: 2.5rem;
+          width: 17%;
+          margin: -11% 0 0 29%; }
+      body main .section_banner div .section_banner_text {
+        color: #c7ccd4;
+        margin-top: 0; }
+      body main .section_banner .section_banner_button {
+        background: #e4ae00;
+        text-align: center;
+        color: #fff;
+        border: none;
+        width: 9rem;
+        height: 3rem;
+        font-weight: 700;
+        -webkit-border-radius: 5%;
+        -moz-border-radius: 5%;
+        -o-border-radius: 5%;
+        -ms-border-radius: 5%;
+        border-radius: 5%; }
+  body footer {
+    width: 100%;
+    background-color: #383d4f;
+    padding-top: 50px; }
+    body footer .footer-wrap {
+      min-height: 10rem;
+      grid-template-columns: repeat(3, 1fr);
+      color: #9ca5b3;
+      font-size: .8rem; }
+      body footer .footer-wrap .footer_logo {
+        display: -ms-grid;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        width: 10%;
+        font-weight: 700;
+        text-align: center; }
+        body footer .footer-wrap .footer_logo img {
+          align-self: center; }
+        body footer .footer-wrap .footer_logo p {
+          font-size: 1.2rem;
+          font-family: "Fresca", sans-serif;
+          padding-bottom: 0; }
+        body footer .footer-wrap .footer_logo span {
+          font-size: .5rem;
+          font-weight: normal;
+          display: block; }
+      body footer .footer-wrap .footer_text {
+        padding: 0 23%; }
