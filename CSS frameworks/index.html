@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Frameworks</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <!-- 1. Implement layout with desktop, tablet and mobile view according to mock-ups.
+  2. Please, use BEM for html markup and Bootstrap for styling.
+  3. Please, create own CSS rules only if you didn`t find them in Bootstrap.
+  4. Pixel perfect not required.
+  5. Navigation not required.
+  6. The @media query breakpoints that are used in the example (desktop first):
+      a. max-width: 1400px (for the desktop) col-lg
+      b. max-width: 768px (for the tablet)    col-md
+      c. max-width: 576px (for the phone screen) col-sm  -->
+  <!-- Navigation Menu -->
+  <nav class="navigation navbar navbar-expand-md navbar-light">
+    <a class="navigation__brand navbar-brand offset-1" href="#"><strong>Games</strong></a>
+    <button class="navigation__toggler navbar-toggler mr-5" type="button" data-toggle="collapse"
+      data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navigation__toggler--icon navbar-toggler-icon"></span>
+    </button>
+    <div class="navigation__content collapse navbar-collapse col-9" id="navbarSupportedContent">
+      <ul class="navigation__content__list list navbar-nav mx-auto">
+        <li class="list__item nav-item active">
+          <a class="list__item--link nav-link " href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="list__item nav-item">
+          <a class="list__item--link nav-link" href="#features">Features</a>
+        </li>
+        <li class="list__item nav-item">
+          <a class="list__item--link nav-link" href="#pricing">Pricing</a>
+        </li>
+        <li class="list__item nav-item">
+          <a class="list__item--link nav-link disabled" href="#">Disabled</a>
+        </li>
+      </ul>
+      <form class="navigation__content__form form-inline">
+        <button class="navigation__content__form--submit btn btn-dark" type="submit">Push to Start</button>
+      </form>
+    </div>
+  </nav>
+  <!-- Front-end Lab CSS Frameworks Introduction -->
+  <section class="introduction container">
+    <div class="introduction__inner row mt-5 mb-5">
+      <div class="introduction__inner__content col col-md-6 order-2 order-md-1 d-flex align-items-center">
+        <div class="content">
+          <h1 class="content--head col-12 text-wrap" id="introduction">
+            Front-end Lab <br> CSS Frameworks
+          </h1>
+          <p class="content--text col-12">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora qui exercitationem mollitia!
+            Saepe magnam, aliquam vel quasi provident maxime odit unde labore nostrum,
+            blanditiis delectus ducimus ipsum eos at! Corrupti.
+          </p>
+          <button class="content--button btn btn-lg border-0 text-light ml-3">Find Out More</button>
+        </div>
+      </div>
+      <img class="introduction__inner__image col col-md-6 align-middle order-1 order-md-2" src="assets/hero-5.jpg"
+        alt="hero-5">
+    </div>
+  </section>
+  <!-- Games section Dark -->
+  <section class="section-dark container-fluid bg-dark">
+    <div class="section-header col text-center text-light pt-5">
+      <h3 class="section-header__head" id="features">Games section</h3>
+      <p class="section-header__text col col-md-7 mx-auto mb-5">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aenean commodo ligula eget dolor.
+      </p>
+    </div>
+    <div class="section-content row text-center text-light d-flex justify-content-center ml-md-5 mr-md-5">
+      <div class="section-content__card card col-12 col-sm-6 col-md-4 bg-dark border-0 mb-5">
+        <img src="assets/1.jpg" class="section-content__card__image card-img-top shadow" alt="img1">
+        <div class="section-content__card__body card-body">
+          <h5 class="section-content__card__body--title card-title">Card title</h5>
+          <p class="section-content__card__body--text card-text">Lorem ipsum dolor sit amet consectetur adipisicing
+            elit.
+            Aenean commodo ligula eget dolor.</p>
+        </div>
+      </div>
+      <div class="section-content__card card col-12 col-sm-6 col-md-4 bg-dark border-0 mb-5">
+        <img src="assets/2.jpg" class="section-content__card__image card-img-top shadow" alt="img2">
+        <div class="section-content__card__body card-body">
+          <h5 class="section-content__card__body--title card-title">Card title</h5>
+          <p class="section-content__card__body--text card-text">Lorem ipsum dolor sit amet consectetur adipisicing
+            elit.
+            Aenean commodo ligula eget dolor.</p>
+        </div>
+      </div>
+      <div class="section-content__card card col-12 col-sm-6 col-md-4 bg-dark border-0 mb-5">
+        <img src="assets/3.jpg" class="section-content__card__image card-img-top shadow" alt="img3">
+        <div class="section-content__card__body card-body">
+          <h5 class="section-content__card__body--title card-title">Card title</h5>
+          <p class="section-content__card__body--text card-text">Lorem ipsum dolor sit amet consectetur adipisicing
+            elit.
+            Aenean commodo ligula eget dolor.</p>
+        </div>
+      </div>
+      <div class="section-content__card card col-12 col-sm-6 col-md-4 bg-dark border-0 mb-5">
+        <img src="assets/4.jpg" class="section-content__card__image card-img-top shadow" alt="img4">
+        <div class="section-content__card__body card-body">
+          <h5 class="section-content__card__body--title card-title">Card title</h5>
+          <p class="section-content__card__body--text card-text">Lorem ipsum dolor sit amet consectetur adipisicing
+            elit.
+            Aenean commodo ligula eget dolor.</p>
+        </div>
+      </div>
+      <div class="section-content__card card col-12 col-sm-6 col-md-4 bg-dark border-0 mb-5">
+        <img src="assets/5.jpg" class="section-content__card__image card-img-top shadow" alt="img5">
+        <div class="section-content__card__body card-body">
+          <h5 class="section-content__card__body--title card-title">Card title</h5>
+          <p class="section-content__card__body--text card-text">Lorem ipsum dolor sit amet consectetur adipisicing
+            elit.
+            Aenean commodo ligula eget dolor.</p>
+        </div>
+      </div>
+      <div class="section-content__card card col-12 col-sm-6 col-md-4 bg-dark border-0 mb-5">
+        <img src="assets/6.jpg" class="section-content__card__image card-img-top shadow" alt="img6">
+        <div class="section-content__card__body card-body">
+          <h5 class="section-content__card__body--title card-title">Card title</h5>
+          <p class="section-content__card__body--text card-text">Lorem ipsum dolor sit amet consectetur adipisicing
+            elit.
+            Aenean commodo ligula eget dolor.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Games section Light -->
+  <section class="section-light container-fluid bg-light m-0">
+    <div class="section-header col text-center pt-5">
+      <h3 class="section-header__head" id="pricing">Games section</h3>
+      <p class="section-header__text col col-md-7 mx-auto mb-5">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+    </div>
+    <div class="section-content row text-center d-flex justify-content-center ml-md-5 mr-md-5">
+      <div class="section-content__card card col-12 col-md-6 bg-light border-0 mb-5">
+        <img src="assets/7.jpg" class="section-content__card__image card-img-top shadow" alt="img7">
+        <div class="section-content__card__body card-body">
+          <h5 class="section-content__card__body--title card-title">Card title</h5>
+          <p class="section-content__card__body--text card-text">Lorem ipsum dolor sit amet consectetur adipisicing
+            elit.
+            Aenean commodo ligula eget dolor.</p>
+        </div>
+      </div>
+      <div class="section-content__card card col-12 col-md-6 bg-light border-0 mb-5">
+        <img src="assets/8.jpg" class="section-content__card__image card-img-top shadow" alt="img8">
+        <div class="section-content__card__body card-body">
+          <h5 class="section-content__card__body--title card-title">Card title</h5>
+          <p class="section-content__card__body--text card-text">Lorem ipsum dolor sit amet consectetur adipisicing
+            elit.
+            Aenean commodo ligula eget dolor.</p>
+        </div>
+      </div>
+      <div class="section-content__card card col-12 col-md-6 bg-light border-0 mb-5">
+        <img src="assets/9.jpg" class="section-content__card__image card-img-top shadow" alt="img9">
+        <div class="section-content__card__body card-body">
+          <h5 class="section-content__card__body--title card-title">Card title</h5>
+          <p class="section-content__card__body--text card-text">Lorem ipsum dolor sit amet consectetur adipisicing
+            elit.
+            Aenean commodo ligula eget dolor.</p>
+        </div>
+      </div>
+      <div class="section-content__card card col-12 col-md-6 bg-light border-0 mb-5">
+        <img src="assets/10.jpg" class="section-content__card__image card-img-top shadow" alt="img10">
+        <div class="section-content__card__body card-body">
+          <h5 class="section-content__card__body--title card-title">Card title</h5>
+          <p class="section-content__card__body--text card-text">Lorem ipsum dolor sit amet consectetur adipisicing
+            elit.
+            Aenean commodo ligula eget dolor.</p>
+        </div>
+      </div>
+      <div class="section-content__card card col-12 col-md-6 bg-light border-0 mb-5">
+        <img src="assets/11.jpg" class="section-content__card__image card-img-top shadow" alt="img11">
+        <div class="section-content__card__body card-body">
+          <h5 class="section-content__card__body--title card-title">Card title</h5>
+          <p class="section-content__card__body--text card-text">Lorem ipsum dolor sit amet consectetur adipisicing
+            elit.
+            Aenean commodo ligula eget dolor.</p>
+        </div>
+      </div>
+      <div class="section-content__card card col-12 col-md-6 bg-light border-0 mb-5">
+        <img src="assets/12.jpg" class="section-content__card__image card-img-top shadow" alt="img12">
+        <div class="section-content__card__body card-body">
+          <h5 class="section-content__card__body--title card-title">Card title</h5>
+          <p class="section-content__card__body--text card-text">Lorem ipsum dolor sit amet consectetur adipisicing
+            elit.
+            Aenean commodo ligula eget dolor.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer class="footer container-fluid bg-dark pt-5 pb-3">
+    <div class="footer__content row mx-auto d-flex justify-content-center align-items-center">
+      <div class="footer__content__text col-12 col-md-5 text-light offset-md-1">
+        <h4 class="footer__content__text--head">Subscribe</h4>
+        <p class="footer__content__text--text pb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Aenean commodo ligula eget dolor.</p>
+      </div>
+      <form action="#" class="footer__content__form col-12 col-md-5 form form-group mr-md-5 pr-md-3">
+        <input type="email" name="email" id="email" class="footer__content__form--email form-control mb-2"
+          placeholder="Email Address">
+        <button type="submit" class="footer__content__form--submit form-control border-0 text-light">Subscribe</button>
+      </form>
+    </div>
+    <p class="footer__copy col text-light text-center pt-3">&copy;2020 Front-end Lab</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
