@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+body {
+  background-color: #ffcb05;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+input{
+  font-family: inherit;
+}
+#app-container {
+  text-align: center;
+}
+h2 {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  min-height: 70px;
+  line-height: 70px;
+  margin-bottom: 50px;
+}
+p{
+  height: 55px;
+  width: 100%;
+  background-image: url('https://i.gifer.com/origin/12/12d043d53cb8adeb6bd5dca9df506278_w200.gif');
+  background-repeat: no-repeat;
+  background-color: black;
+  background-position: center;
+}
+h2,
+thead,
+button{
+  font-family: 'Orbitron', sans-serif;
+}
+.add{
+  min-height: 25px;
+  width: 25%;
+  margin-right: 5px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: -2px 2px 2px 0px rgba(66, 66, 66, 0.75);
+  background-color: #fde06a;
+  text-align: center;
+  font-style: italic;
+  outline: none;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+thead {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  min-height: 50px;
+  line-height: 50px;
+}
+tbody,
+tbody input,
+tbody button {
+  font-size: 14px;
+}
+tbody tr:nth-child(odd),
+tbody tr:nth-child(odd) input {
+  background-color: #fde06a;
+}
+#add:disabled,
+.add:disabled,
+tbody tr:nth-child(even),
+tbody tr:nth-child(even) input {
+  background-color: rgb(88, 88, 88);
+  color: rgb(255, 255, 255);
+}
+#add,
+tbody tr:nth-child(even) button,
+tbody tr:nth-child(odd) button:hover {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+#add:hover,
+tbody tr:nth-child(odd) button,
+tbody tr:nth-child(even) button:hover {
+  background-color: #ffcb05;
+  color: rgb(0, 0, 0);
+}
+#add,
+td input,
+td button {
+  width: 100%;
+  text-align: center;
+  min-height: 30px;
+  border: none;
+  outline: none;
+}
+#add{
+  width: 20%;
+}
+#add,
+td button {
+  border-radius: 5px;
+  box-shadow: -2px 2px 2px 0px rgba(66, 66, 66, 0.75);
+  transition: 1s;
+  font-size: small;
+}
+td input:focus{
+  font-style: italic;
+}
